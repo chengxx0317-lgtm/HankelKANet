@@ -1,0 +1,87 @@
+{
+  "preparation_version": "3.0-binary-building-nearest-strict-outdoor",
+  "prepared_or_existing_cells": 3804,
+  "failed_cells": 1,
+  "grid_shape": [
+    40,
+    80
+  ],
+  "measured_grid_coverage": {
+    "count": 3804,
+    "mean": 0.20027471083070453,
+    "median": 0.191875,
+    "min": 0.0003125,
+    "max": 0.6096875,
+    "std": 0.09780078012772907
+  },
+  "environment_grid_coverage": {
+    "count": 3804,
+    "mean": 0.32232017284437436,
+    "median": 0.32625,
+    "min": 0.000625,
+    "max": 0.918125,
+    "std": 0.1320807759773469
+  },
+  "completed_building_fraction": {
+    "count": 3804,
+    "mean": 0.36736272676996545,
+    "median": 0.37281250953674316,
+    "min": 0.0,
+    "max": 0.9100000262260437,
+    "std": 0.17610765224511826
+  },
+  "observed_building_fraction": {
+    "count": 3804,
+    "mean": 0.3713898255351505,
+    "median": 0.3887684691546078,
+    "min": 0.0,
+    "max": 0.8774373259052924,
+    "std": 0.1799804020749511
+  },
+  "target_on_building_fraction": {
+    "count": 3804,
+    "mean": 0.0,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "std": 0.0
+  },
+  "excluded_target_on_building_fraction": {
+    "count": 3804,
+    "mean": 0.1318292419149411,
+    "median": 0.1152832377168734,
+    "min": 0.0,
+    "max": 0.5763097949886105,
+    "std": 0.10167907333757775
+  },
+  "environment_label_conflict_fraction": {
+    "count": 3804,
+    "mean": 0.08627080698482176,
+    "median": 0.07842054546832537,
+    "min": 0.0,
+    "max": 0.35609756097560974,
+    "std": 0.06263745143607735
+  },
+  "gain_outside_source_range_fraction": {
+    "count": 3804,
+    "mean": 8.15531144460275e-05,
+    "median": 0.0,
+    "min": 0.0,
+    "max": 0.025252525252525252,
+    "std": 0.0007668197017275031
+  },
+  "inside_ratio_complete": {
+    "count": 3804,
+    "mean": 0.9997606014146861,
+    "median": 1.0,
+    "min": 0.9333333333333333,
+    "max": 1.0,
+    "std": 0.0018825184855435296
+  },
+  "cells_building_fraction_lt_1pct": 70,
+  "cells_building_fraction_gt_90pct": 2,
+  "cells_measured_coverage_lt_10pct": 572,
+  "cells_measured_coverage_gt_90pct": 0,
+  "cells_with_any_gain_outside_source_range": 102,
+  "cells_with_target_on_building_conflict": 0
+}
