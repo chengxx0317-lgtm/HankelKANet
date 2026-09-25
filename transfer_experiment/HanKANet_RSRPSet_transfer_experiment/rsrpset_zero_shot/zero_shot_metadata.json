@@ -1,0 +1,49 @@
+{
+  "protocol": "zero-shot synthetic-to-real; RadioMapSeer checkpoint -> frozen Huawei test split",
+  "prepared_root": "C:\\Users\\lyj\\Desktop\\PythonProject1\\Hankel_kan_convolutional\\huawei_transfer_experiment\\RSRPSet_HKAN_prepared",
+  "split_json": "C:\\Users\\lyj\\Desktop\\PythonProject1\\Hankel_kan_convolutional\\huawei_transfer_experiment\\RSRPSet_HKAN_prepared\\splits\\split_rsrpset3804_seed42.json",
+  "split_json_sha256": "e0207ab53c39fb6addbe682d2ac55622f11075110036fb863bdde15694335797",
+  "source_checkpoint": "C:\\Users\\lyj\\Desktop\\PythonProject1\\Hankel_kan_convolutional\\models\\hkan_20seed0.pt",
+  "source_checkpoint_sha256": "a336d59e4eb78009ce066fffd162ddbecab929b39903b36241d185f484ac78f8",
+  "strict_load": true,
+  "total_params": 14952353,
+  "architecture": {
+    "base_ch": 32,
+    "phys_ch": 32,
+    "orders": [
+      0,
+      1
+    ],
+    "z_min": 0.0031415926535897933,
+    "kappa_min": 0.1,
+    "kappa_max": 10.0,
+    "kappa_init": 3.141592653589793,
+    "input_channels": [
+      "building",
+      "r_map"
+    ]
+  },
+  "db_normalization": {
+    "min": -147.0,
+    "max": -47.84,
+    "clip": false
+  },
+  "metric_mask": "measured outdoor grids only",
+  "metric_primary": "global/micro aggregation over all measured test grids",
+  "target_domain_parameter_updates": 0,
+  "test_cells": 761,
+  "device": "cuda",
+  "amp": true,
+  "metrics": {
+  "mae_db": 3.286416295301005,
+  "rmse_db": 5.824720334780293,
+  "r2": 0.80413709689499,
+  "macro_mae_db": 3.451506358745854,
+  "macro_rmse_db": 5.787733927381153,
+  "macro_r2": 0.770458744102012,
+  "measured_test_grids": 481688,
+  "test_cells": 761,
+  "masked_mse_norm": 0.00345046097773974,
+  "elapsed_sec": 900
+}
+}

@@ -1,0 +1,2 @@
+﻿CI,source_file,error
+1685501,C:\Users\lyj\Desktop\PythonProject1\实测数据集\RSRPSet\rsrpset-dataset-16th-cpgmcm\upload_dataset\DATASET_part6.pickle,ValueError: Cell has no unambiguously outdoor measured target rows.
