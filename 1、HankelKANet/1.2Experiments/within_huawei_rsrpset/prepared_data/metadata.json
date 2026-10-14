@@ -1,0 +1,43 @@
+{
+  "preparation_version": "3.0-binary-building-nearest-strict-outdoor",
+  "raw_root": "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm",
+  "source_files": [
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part1.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part2.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part3.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part4.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part5.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part6.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part7.pickle",
+    "C:\\Users\\lyj\\Desktop\\PythonProject1\\实测数据集\\RSRPSet\\rsrpset-dataset-16th-cpgmcm\\upload_dataset\\DATASET_part8.pickle"
+  ],
+  "grid_h": 40,
+  "grid_w": 80,
+  "dx_m": 5.0,
+  "physical_extent_nominal_m": [
+    200.0,
+    400.0
+  ],
+  "L_ref_m": 440.51106683033515,
+  "tx_grid_index": [
+    0,
+    0
+  ],
+  "coordinate_reconstruction": "x=L*sqrt(1-cosA^2), y=L*cosA; cosA expected in [0,1]",
+  "building_rule": "observed row is building iff Hm >= 5 m OR UCI >= 10",
+  "building_grid_aggregation": "binary-any within each 5 m grid",
+  "building_reconstruction": "nearest-neighbour completion of observed binary building labels; raw Hm/UCI are not spatially interpolated",
+  "environment_fill": "nearest",
+  "outdoor_target_rule": "Hm < 5 m AND UCI < 10 at row level; after 5 m grid aggregation, candidate target grids labelled building are excluded from supervision",
+  "target_definition": "gain_dB = RSRP - RSP = -PL",
+  "target_normalization": {
+    "db_min": -147.0,
+    "db_max": -47.84,
+    "clip": false,
+    "reason": "must remain identical to the existing RadioMapSeer checkpoint scale"
+  },
+  "target_supervision": "measured, building-consistent outdoor grids only; no interpolated RSRP/PL pseudo-labels",
+  "prepared_cells": 3804,
+  "failed_cells": 1,
+  "quality_report": "dataset_quality_report.json"
+}

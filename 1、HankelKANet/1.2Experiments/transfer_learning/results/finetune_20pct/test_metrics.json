@@ -1,0 +1,20 @@
+{
+  "mae_db": 1.891584973054156,
+  "rmse_db": 3.979775042560966,
+  "r2": 0.90867151254690596,
+  "macro_mae_db": 2.031964133860524,
+  "macro_rmse_db": 3.956660464554797,
+  "macro_r2": 0.8833320706634085,
+  "measured_grids": 481688,
+  "valid_cells": 761,
+  "masked_mse_norm": 0.001610808869267061,
+  "mode": "finetune",
+  "budget": "20pct",
+  "seed": 0,
+  "train_cells": 456,
+  "frozen_train_ids_sha256": "4d1b4831a481853260467d389b40d424b444fdf69d77694279fa624debcb6c35",
+  "best_epoch": 15,
+  "best_val_masked_mse_norm": 0.001230057166370721,
+  "learning_rate_initial": 0.0004
+
+}

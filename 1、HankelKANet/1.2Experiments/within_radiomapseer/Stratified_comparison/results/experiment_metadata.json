@@ -1,0 +1,49 @@
+{
+  "dataset_dir": "D:\\PycharmProjects\\PythonProjects\\CXX\\PEFNet\\data\\RadioMapSeer",
+  "cache_dir": "./challenging_condition_cache",
+  "device": "cuda",
+  "eval_batch_size": 4,
+  "dx_meters": 1.0,
+  "db_min": -147.0,
+  "db_scale": 99.16,
+  "thresholds": {
+    "dataset": "RadioMapSeer",
+    "split_seed": 42,
+    "img_size": 256,
+    "dx_meters": 1.0,
+    "distance_threshold_source": "TRAIN-split outdoor Tx-Rx samples only",
+    "distance_sampling_seed": 20260816,
+    "distance_samples_per_tx": 32,
+    "distance_sample_count": 1279966,
+    "short_distance_quantile": 0.25,
+    "long_distance_quantile": 0.75,
+    "short_distance_max_m": 72.80110168457031,
+    "long_distance_min_m": 147.47203063964844,
+    "building_density_definition": "number_of_building_pixels / (H*W)",
+    "building_density_threshold_source": "all TRAIN-split scene building maps",
+    "training_scene_count_for_density": 500,
+    "high_density_quantile": 0.75,
+    "high_building_density_min": 0.3080329895019531,
+    "evaluation_receiver_policy": "Stratified metrics use outdoor Rx pixels only and exclude Tx.",
+    "los_definition": "Tx-to-Rx grid centerline does not traverse a building pixel before the outdoor Rx endpoint.",
+    "los_implementation": "vectorized DDA centerline test; source/Rx endpoints excluded"
+  },
+  "enabled_models": [
+    {
+      "enabled": true,
+      "name": "Radial_{0,1}",
+      "kind": "baseline",
+      "code_dir": "D:\\PycharmProjects\\PythonProjects\\CXX\\Hankel_kan_convolutional",
+      "checkpoint": "D:\\PycharmProjects\\PythonProjects\\CXX\\Hankel_kan_convolutional\\models\\hkan_17.pt"
+    }
+  ],
+  "metric_protocol": "For each radio map and each condition, MAE/RMSE are computed over valid condition pixels; final values are arithmetic means across valid radio maps.",
+  "required_conditions": [
+    "LOS",
+    "NLOS",
+    "SHORT_DISTANCE",
+    "LONG_DISTANCE",
+    "HIGH_BUILDING_DENSITY"
+  ],
+  "selection_rule": "Challenger identity must be fixed from validation results, not from this test table."
+}

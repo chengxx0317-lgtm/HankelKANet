@@ -1,0 +1,24 @@
+{
+  "version": "2.0-rsrpset-3804-fixed-nested-subsets",
+  "status": "PASS",
+  "prepared_cell_count": 3804,
+  "split_counts": {
+    "train": 2282,
+    "val": 761,
+    "test": 761
+  },
+  "split_disjoint": true,
+  "split_union_equals_all_prepared_cells": true,
+  "nested_subsets": true,
+  "subset_counts": {
+    "1pct": 23,
+    "5pct": 114,
+    "10pct": 228,
+    "20pct": 456
+  },
+  "all_subsets_inside_train": true,
+  "failed_cis_found_in_split": [],
+  "split_seed": 42,
+  "subset_seed": 42,
+  "official_split_json": "C:\\Users\\lyj\\Desktop\\PythonProject1\\huawei_transfer_experiment\\RSRPSet_HKAN_prepared\\splits\\split_rsrpset3804_seed42.json"
+}

@@ -1,0 +1,49 @@
+{
+  "mode": "scratch",
+  "budget": "100pct",
+  "seed": 0,
+  "prepared_root": "C:\\Users\\lyj\\Desktop\\PythonProject1\\Hankel_kan_convolutional\\huawei_transfer_experiment\\RSRPSet_HKAN_prepared",
+  "split_json": "C:\\Users\\lyj\\Desktop\\PythonProject1\\Hankel_kan_convolutional\\huawei_transfer_experiment\\RSRPSet_HKAN_prepared\\splits\\split_rsrpset3804_seed42.json",
+  "split_version": "2.0-rsrpset-3804-fixed-nested-subsets",
+  "split_seed": 42,
+  "subset_seed": 42,
+  "frozen_subset_source": "split_json.train",
+  "frozen_train_cell_count": 2282,
+  "frozen_train_ids_sha256": "4afe8ed6058525530310b87eed271298146415a520a92c2ff4320f4565ed18a3",
+  "val_cells": 761,
+  "test_cells": 761,
+  "training_seed_only_changes_stochasticity": true,
+  "source_checkpoint": null,
+  "source_checkpoint_sha256": null,
+  "checkpoint_strict_load": "N/A (scratch)",
+  "probe_input_shape": [
+    32,
+    2,
+    40,
+    80
+  ],
+  "probe_output_shape": [
+    32,
+    1,
+    40,
+    80
+  ],
+  "optimizer": "AdamW",
+  "lr_initial": 0.004,
+  "weight_decay": 0.0001,
+  "scheduler": "CosineAnnealingLR",
+  "max_epochs": 250,
+  "eta_min": 1e-06,
+  "batch_size": 32,
+  "val_interval_epochs": 5,
+  "early_stopping_patience_epochs": 50,
+  "grad_clip": 1.0,
+  "amp": true,
+  "metric_mask": "measured strict-outdoor grids only",
+  "db_normalization": {
+    "min": -147.0,
+    "max": -47.84,
+    "clip": false
+  },
+  "test_usage": "evaluated once after validation-based checkpoint selection"
+}

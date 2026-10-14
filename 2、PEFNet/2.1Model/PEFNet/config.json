@@ -1,0 +1,12 @@
+{
+  "data_root": "./RadioMapSeer",
+  "epochs": 250,
+  "batch_size": 32,
+  "num_workers": 4,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "minimum_learning_rate": 1e-06,
+  "early_stopping_patience": 50,
+  "db_min": -147.0,
+  "db_max": -47.84
+}
